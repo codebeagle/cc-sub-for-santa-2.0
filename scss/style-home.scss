@@ -1,0 +1,164 @@
+@import "variables";
+
+.home-page {
+
+  h2 {
+    color: $red-300;
+    margin-bottom: 20px;
+  }
+
+  .content-wrapper {
+    max-width: $site-max-width;
+    margin: 0 auto;
+  }
+
+  .hero {
+    padding: 0 15px 120px;
+    z-index: 0;
+    background-image: url(../images/img-home-hero-background.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    .layout {
+      max-width: $full-width;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .col-1 {
+      margin-bottom: 15px;
+      max-width: 320px;
+    }
+
+    .col-2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    .btn-primary {
+      margin-top: 20px;
+    }
+  }
+
+  .introduction {
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+
+    .layout {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 15px;
+    }
+
+    .col-1 {
+      margin: 0 0 30px;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+
+    .col-2 {
+      background-color: $red-300;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+
+      h3 {
+        color: $white;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: $white;
+      }
+    }
+  }
+
+  .thank-you {
+    padding: 60px 0 30px;
+    background-color: $gray-100;
+    z-index: 0;
+    text-align: center;
+
+    .layout {
+      max-width: $full-width;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .sponsors {
+      margin-top: 60px;
+      column-count: 2;
+      column-gap: 30px;
+    }
+
+    ul {
+
+      li {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        &:nth-child(odd) {
+          color: $green-300;
+        }
+
+        &:nth-child(even) {
+          color: $green-200;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .home-page {
+
+    .hero {
+
+      .layout {
+        flex-direction: row;
+      }
+
+      .col-1 {
+        margin-right: 30px;
+        max-width: 600px;
+      }
+
+      .col-2 {
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+
+    .introduction {
+      padding: 60px 0;
+      
+      .layout {
+        flex-direction: row;
+      }
+
+      .col-1 {
+        margin: 0 60px 0 0;
+      }
+    }
+
+    .thank-you {
+      padding: 80px 0 60px;
+    }
+  }
+}

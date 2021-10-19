@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width">
         <title>CC Sub for Santa Home Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     </head>
     <body>
 
-        <header>
-            <img src="" alt="">
-            <nav>
-                <a href="">Ways to Participate</a>
-                <a href="">Apply for Assistance</a>
-                <a href="">About Us</a>
-                <a href="">Contact</a>
-            </nav>
+        <header class="header">
+            <div class="site-nav-wrapper">
+                <div class="red-bar"></div>
+                <a  class="logo" href="">
+                    <img src="images/sub-for-santa-logo.png" alt="Cache County Sub-for-Santa logo" width="85" height="85">
+                </a>
+                <nav class="site-nav">
+                    <a class="site-nav-link" href="">Ways to Participate</a>
+                    <a class="site-nav-link" href="">Apply for Assistance</a>
+                    <a class="site-nav-link" href="">About Us</a>
+                    <a class="site-nav-link" href="">Contact</a>
+                </nav>
+                <button class="site-nav-toggle">Menu</button>
+            </div>
         </header>
 
-        <div class="main-content">
+        <div class="main-content sidebar">
             <aside>
-              <nav>
-                <a href="">Angel Tree</a>
-                <a href="">Financial Donation</a>
-                <a href="">Gift Cards</a>
-                <a href="">Top 20 Items</a>
-                <a href="">Amazon Smile</a>
-                <a href="">Amazon Wishlist</a>
-                <a href="">Sponsor a Family</a>
-                <a href="">Become a Volunteer</a>
-              </nav>
+                <nav class="participate-menu">
+                    <a class="menu-link" href="">Angel Tree</a>
+                    <a class="menu-link" href="">Financial Donation</a>
+                    <a class="menu-link" href="">Gift Cards</a>
+                    <a class="menu-link" href="">Top 20 Items</a>
+                    <a class="menu-link" href="">Amazon Smile</a>
+                    <a class="menu-link" href="">Amazon Wishlist</a>
+                    <a class="menu-link active" href="">Sponsor a Family</a>
+                    <a class="menu-link" href="">Become a Volunteer</a>
+                </nav> 
             </aside>
             <section class="page-content">
               <h1>This is the primary heading for the page</h1>
@@ -35,17 +47,17 @@
             </section>
         </div>
 
-        <footer>
-            <ul class="contact-info">
-                <li>Office Hours: 10:00 AM —5:00 PM</li>
-                <li>+1 (435) 754-9216</li>
-                <li>cachecountysubforsanta@gmail.com</li>
-                <li>PO Box 4603 Logan, UT 84323</li>
-            </ul>
-            <p>The mission of the Cache County Sub for Santa program is to provide temporary assistance during the Christmas season to individuals and families residing in Cache County who are in need. Our volunteers work tirelessly each year to translate donations from a wide array of individuals and businesses into much-needed gifts for families in our community.</p>
-            <div class="endcap">
-                <p>2021 &copy; Cache County Sub for Santa | All Rights Reserved.</p>
+        <footer class="footer">
+            <div class="footer-content-wrapper">
+                <ul class="contact-info">
+                    <li><strong>Office Hours: 10:00 AM —5:00 PM</strong></li>
+                    <li><strong>+1 (435) 754-9216</strong></li>
+                    <li><strong>cachecountysubforsanta@gmail.com</strong></li>
+                    <li><strong>PO Box 4603 Logan, UT 84323</strong></li>
+                </ul>
+                <p class="message">The mission of the Cache County Sub for Santa program is to provide temporary assistance during the Christmas season to individuals and families residing in Cache County who are in need. Our volunteers work tirelessly each year to translate donations from a wide array of individuals and businesses into much-needed gifts for families in our community.</p>
             </div>
+            <p class="endcap">&copy; 2021 Cache County Sub for Santa | All Rights Reserved.</p>
         </footer>
     </body>
 </html>

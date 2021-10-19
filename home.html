@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width">
         <title>CC Sub for Santa Home Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     <body>
 
-        <header>
-            <img src="" alt="">
-            <nav>
-                <a href="">Ways to Participate</a>
-                <a href="">Apply for Assistance</a>
-                <a href="">About Us</a>
-                <a href="">Contact</a>
-            </nav>
+        <header class="header">
+            <div class="site-nav-wrapper">
+                <div class="red-bar"></div>
+                <a  class="logo" href="">
+                    <img src="images/sub-for-santa-logo.png" alt="Cache County Sub-for-Santa logo" width="85" height="85">
+                </a>
+                <nav id="js-site-nav" class="site-nav">
+                    <a class="site-nav-link" href="">Ways to Participate</a>
+                    <a class="site-nav-link" href="">Apply for Assistance</a>
+                    <a class="site-nav-link" href="">About Us</a>
+                    <a class="site-nav-link" href="">Contact</a>
+                </nav>
+                <button id="js-toggle-menu" class="site-nav-toggle">Menu</button>
+            </div>
         </header>
 
-        <div class="main-content">
+        <div class="home-page">
             <section class="hero">
-                <img src="" alt="">
-                <h1>Giving to Cache County for over 40 years</h1>
-                <a href="">See how you can help in 2021</a>
+                <div class="content-wrapper layout">
+                    <div class="col-1">
+                        <img class="img-fluid" src="images/sub-for-santa-full-mark-transparent.png" alt="">
+                    </div>
+                    <div class="col-2">
+                        <h1>Giving to Cache County for over 40 years</h1>
+                        <a class="btn btn-primary" href="">See how you can help in 2021</a>
+                    </div>
+                </div>
             </section>
 
             <section class="introduction">
-                <div class="goal">
-                    <h2>You can help us reach our goal.</h2>
-                    <p>The mission of the Cache County Sub for Santa program is to provide temporary assistance during the Christmas season to individuals and families residing in Cache County who are in need. Our volunteers work tirelessly each year to translate donations from a wide array of individuals and businesses into much-needed gifts for families in our community. Year after year we are able to help hundreds of families residing in Cache County, but we can’t do it alone. With your help, we can continue to give.</p>
+                <div class="border border-top"></div>
+                <div class="content-wrapper layout">
+                    <div class="col-1">
+                        <h2>You can help us reach our goal.</h2>
+                        <p>The mission of the Cache County Sub for Santa program is to provide temporary assistance during the Christmas season to individuals and families residing in Cache County who are in need. Our volunteers work tirelessly each year to translate donations from a wide array of individuals and businesses into much-needed gifts for families in our community. Year after year we are able to help hundreds of families residing in Cache County, but we can’t do it alone. With your help, we can continue to give.</p>
+                    </div>
+                    <div class="col-2">
+                        <h3>Make a Donation</h3>
+                        <p>To continue our tradition of giving, we have a goal to raise $20,000 in donations for the 2020 Christmas season. Please consider donating to our cause and help us help others within our community.</p>
+                        <a class="btn btn-white" href="">Donate Now</a>
+                    </div> 
                 </div>
-                <div class="donate">
-                    <h2>Make a Donation</h2>
-                    <p>To continue our tradition of giving, we have a goal to raise $20,000 in donations for the 2020 Christmas season. Please consider donating to our cause and help us help others within our community.</p>
-                    <a href="">Donate Now</a>
-                </div> 
+                <div class="border border-bottom"></div>
             </section>
 
-            <section>
-                <h2>Our Special Thanks</h2>
-                <p>We are amazed every year at the generosity and thoughtful giving from our many sponsors. We want to express our gratitude to the following donors for their extensive generosity that has helped make it possible to serve the community during the Christmas season.
-                </p>
-                <ul class="sponsors">
-                    <li>Knight Storage</li>
-                    <li>Square One Printing</li>
-                    <li>Matthew, Regen & Associates, LLC.</li>
-                    <li>Harley Davidson</li>
-                    <li>Bridgerland Technical College,<br> West Campus</li>
-                    <li>Propel Trampolines</li>
-                    <li>CodeBeagle</li>
-                </ul>
+            <section class="thank-you">
+                <div class="content-wrapper layout">
+                    <h2>Our Special Thanks</h2>
+                    <p>We are amazed every year at the generosity and thoughtful giving from our many sponsors. We want to express our gratitude to the following donors for their extensive generosity that has helped make it possible to serve the community during the Christmas season.
+                    </p>
+                    <ul class="sponsors">
+                        <li>Knight Storage</li>
+                        <li>Square One Printing</li>
+                        <li>Matthew, Regen & Associates, LLC.</li>
+                        <li>Harley Davidson</li>
+                        <li>Bridgerland Technical College,<br> West Campus</li>
+                        <li>Propel Trampolines</li>
+                        <li>CodeBeagle</li>
+                    </ul>
+                </div>
             </section>
         </div>
 
-        <footer>
-            <ul class="contact-info">
-                <li>Office Hours: 10:00 AM —5:00 PM</li>
-                <li>+1 (435) 754-9216</li>
-                <li>cachecountysubforsanta@gmail.com</li>
-                <li>PO Box 4603 Logan, UT 84323</li>
-            </ul>
-            <p>The mission of the Cache County Sub for Santa program is to provide temporary assistance during the Christmas season to individuals and families residing in Cache County who are in need. Our volunteers work tirelessly each year to translate donations from a wide array of individuals and businesses into much-needed gifts for families in our community.</p>
-            <div class="endcap">
-                <p>2021 &copy; Cache County Sub for Santa | All Rights Reserved.</p>
+        <footer class="footer">
+            <div class="footer-content-wrapper">
+                <ul class="contact-info">
+                    <li><strong>Office Hours: 10:00 AM —5:00 PM</strong></li>
+                    <li><strong>+1 (435) 754-9216</strong></li>
+                    <li><strong>cachecountysubforsanta@gmail.com</strong></li>
+                    <li><strong>PO Box 4603 Logan, UT 84323</strong></li>
+                </ul>
+                <p class="message">The mission of the Cache County Sub for Santa program is to provide temporary assistance during the Christmas season to individuals and families residing in Cache County who are in need. Our volunteers work tirelessly each year to translate donations from a wide array of individuals and businesses into much-needed gifts for families in our community.</p>
             </div>
+            <p class="endcap">&copy; 2021 Cache County Sub for Santa | All Rights Reserved.</p>
         </footer>
+        
+        <script src="js/script.js"></script>
     </body>
 </html>

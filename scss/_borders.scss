@@ -1,0 +1,17 @@
+.border {
+  background-repeat: repeat-x;
+  background-position: center center;
+  height: 28px;
+  width: 100%;
+  position: absolute;
+}
+
+.border-top {
+  background-image: url(../images/jagged-border-top.png);
+  top: -28px;
+}
+
+.border-bottom {
+  background-image: url(../images/jagged-border-bottom.png);
+  bottom: -28px;
+}

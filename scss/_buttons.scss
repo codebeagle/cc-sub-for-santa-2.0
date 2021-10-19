@@ -1,0 +1,27 @@
+.btn {
+  border-radius: 4px;
+  padding: 20px 35px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: $sans-serif;
+  font-weight: 700;
+  transition: all $duration $ease;
+}
+
+.btn-primary {
+  background-color: $red-300;
+  color: $white;
+
+  &:hover {
+    background-color: $red-200;
+  }
+}
+
+.btn-white {
+  background-color: $white;
+  color: $red-300;
+
+  &:hover {
+    color: $red-200;
+  }
+}
